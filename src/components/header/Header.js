@@ -5,7 +5,6 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentuser } from '../../redux/user/user.selector';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './Header.scss';
-// import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/Cart-icon';
 import CartDropdown from './../cart-dropdown/Cart-dropdown';
 import { signOutStart } from '../../redux/user/user.actions';

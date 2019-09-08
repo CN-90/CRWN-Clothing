@@ -90,7 +90,6 @@ export function* onEmailSignInStart() {
 export function* isUserAuthenticated() {
   try {
     const userAuth = yield getCurrentUser();
-    console.log(userAuth);
     if (!userAuth) return;
     yield getSnapshotFromUserAuth(userAuth);
   } catch (error) {
