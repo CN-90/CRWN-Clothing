@@ -32,33 +32,6 @@ const App = ({ checkUserSession, currentUser }) => {
   );
 };
 
-// class App extends React.Component {
-//   componentDidMount() {
-//     const { checkUserSession } = this.props;
-//     checkUserSession();
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         <Header />
-//         <Switch>
-//           <Route exact path="/" component={Homepage} />
-//           <Route path="/shop" component={Shop} />
-//           <Route exact path="/checkout" component={checkoutPage} />
-//           <Route
-//             exact
-//             path="/signin"
-//             render={() =>
-//               this.props.currentUser ? <Redirect to="/" /> : <SignInOut />
-//             }
-//           />
-//         </Switch>
-//       </div>
-//     );
-//   }
-// }
-
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentuser
 });
